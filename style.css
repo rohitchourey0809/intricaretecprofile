@@ -70,6 +70,11 @@ body {
     cursor: pointer;
 }
 
+.menu-item {
+    border: none;
+    appearance: none;
+}
+
 /* Profile */
 
 .profile-card {
@@ -491,6 +496,28 @@ td {
     padding: 12px 22px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+/* Focus styles for keyboard users */
+button:focus-visible,
+.tab-btn:focus-visible,
+.add-btn:focus-visible,
+.theme-btn:focus-visible,
+.previous-btn:focus-visible,
+.submit-btn:focus-visible,
+.search-box input:focus-visible,
+select:focus-visible {
+    outline: 3px solid rgba(77,103,255,0.18);
+    outline-offset: 2px;
+}
+
+/* Screen-reader only */
+.sr-only {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
 /* Responsive */
